@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "Nom": "Hannachi",
+        "Prenom": "Moez",
+        "Zone": "0",
+        "Age_rel": "20",
+        "Mnt_crd": "150000",
+        "Val_Gar": "150000",
+        "Sexe": "1",
+        "Marche": "1",
+        "Segment": "2",
+        "score": "7.22",
+        "Date": "2021-07-06 07:07:20.308328",
+        "IP": "127.0.0.1"
+    },
+    {
+        "id": 1,
+        "Nom": "Hannachi",
+        "Prenom": "Moez",
+        "Zone": "0",
+        "Age_rel": "20",
+        "Mnt_crd": "150000",
+        "Val_Gar": "150000",
+        "Sexe": "1",
+        "Marche": "1",
+        "Segment": "2",
+        "score": "7.22",
+        "Date": "2021-07-14 09:33:24.737921",
+        "IP": "127.0.0.1"
+    },
+    {
+        "id": 1,
+        "Nom": "Hannachi",
+        "Prenom": "Moez",
+        "Zone": "0",
+        "Age_rel": "20",
+        "Mnt_crd": "150000",
+        "Val_Gar": "150000",
+        "Sexe": "1",
+        "Marche": "1",
+        "Segment": "2",
+        "score": "17.92",
+        "Date": "2021-07-14 09:34:42.957370",
+        "IP": "127.0.0.1"
+    }
+]
