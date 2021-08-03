@@ -73,13 +73,12 @@ result=log_reg.fit(X,y)
 #final = [np.array(inputt)]
 #b = log_reg.predict_proba(final)
 
-
 #print(b)
 
-#pickle.dump(log_reg, open('model.pkl', 'wb'))
-#model = pickle.load(open('model.pkl', 'rb'))
+pickle.dump(log_reg, open('model.pkl', 'wb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
-from joblib import dump
-dump(log_reg, 'model.joblib')
+#from joblib import dump
+#dump(log_reg, 'model.joblib')
 
 

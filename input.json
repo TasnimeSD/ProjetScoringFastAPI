@@ -27946,5 +27946,17 @@
         "Sexe": "Femme",
         "Marche": "PAR",
         "Segment": "2"
+    },
+    {
+        "id": 707324,
+        "Nom": "Tasnime",
+        "Prenom": "Saadi",
+        "Zone": "Nord",
+        "Age_rel": 20,
+        "Mnt_crd": 350000,
+        "Val_Gar": 150000,
+        "Sexe": "Femme",
+        "Marche": "PAR",
+        "Segment": "2"
     }
 ]
