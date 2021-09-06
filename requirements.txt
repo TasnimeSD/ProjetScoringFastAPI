@@ -87,7 +87,7 @@ typing-extensions==3.10.0.0
 urllib3==1.24.1
 uvicorn==0.14.0
 virtualenv==20.6.0
-virtualenv-clone==0.5.4
+virtualenv-clone
 vlc
 wcwidth==0.1.7
 Werkzeug==2.0.1
