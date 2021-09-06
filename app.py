@@ -24,7 +24,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 #Load the pretrained model
-model = joblib.load(open('model.pkl' , 'rb')) 
+#model = joblib.load(open('model.pkl' , 'rb')) 
+model = pickle.load(open('model.pkl' , 'rb')) 
 
 class Test(BaseModel):
     id : int = -1
@@ -77,7 +78,7 @@ async def ref(id: int, request: Request):
     Test=database.extract_ref(id)
     a = Test['id']
     Test = database.modif_contenu(Test)
-    return templates.TemplateResponse('Index.html', {"request": request, "Test": Test})
+    return templates.TemplateResponse('index.html', {"request": request, "Test": Test})
 
 
 #@app.route('/predict' , methods=['POST','GET'])
@@ -119,10 +120,10 @@ async def predict(request: Request):
     # Export les données en json  avec la date , l'IP @ et le score calculé
     if score>str(50):
         msg = "Risque élevé.\n Le score attribué à cette demande est {}".format(score)+"/100"
-        return templates.TemplateResponse("Index.html", {"request": request, "Test": Test, "pred": msg})
+        return templates.TemplateResponse("index.html", {"request": request, "Test": Test, "pred": msg})
     else:
         msg = "Risque faible.\n Le score attribué à cette demande est {}".format(score)+"/100"
-        return templates.TemplateResponse("Index.html", {"request": request, "Test": Test, "pred": msg})
+        return templates.TemplateResponse("index.html", {"request": request, "Test": Test, "pred": msg})
 
 
 if __name__ == '__main__':   
